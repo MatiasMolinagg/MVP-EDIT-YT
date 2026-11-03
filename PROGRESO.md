@@ -2,9 +2,10 @@
 
 ## Completado
 - Bloque 1: scaffold Vite + React 18 + TS + Tailwind v3, tokens claro/oscuro, fuentes, HashRouter, anti-flash, manifest + íconos, render.yaml, scripts QA.
+- Bloque 2: i18n (diccionario por archivos + useT + tr pura), stores (app + studio persistido en sessionStorage), marca.ts, mock completo, plantillas de guion, pipeline.
 
 ## En curso
-- Bloque 2: i18n, stores, marca.ts, mock.
+- Bloque 3: shell.
 
 ## Pendiente
 - Bloques 3–15.
