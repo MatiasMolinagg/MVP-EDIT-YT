@@ -49,6 +49,8 @@ interface AppState {
   markAllRead: () => void
   abrirPreview: (modulo: number, view: string, titulo: Texto) => void
   cerrarPreview: () => void
+  cancelarPreview: () => void
+  trailerSession: (v: boolean) => void
   limpiarDestacado: () => void
   collapseBanner: (id: string, collapsed: boolean) => void
   startTour: () => void
@@ -95,6 +97,8 @@ export const useApp = create<AppState>((set, get) => ({
   markAllRead: () => set({ notifs: get().notifs.map((n) => ({ ...n, read: true })) }),
   abrirPreview: (modulo, view, titulo) => set({ preview: { modulo, view, titulo } }),
   cerrarPreview: () => { const p = get().preview; set({ preview: null, moduloDestacado: p ? p.modulo : null }) },
+  cancelarPreview: () => { if (get().preview) set({ preview: null }) },
+  trailerSession: (v) => set({ session: v || ss.get('creavo_session') === '1' }),
   limpiarDestacado: () => set({ moduloDestacado: null }),
   collapseBanner: (id, collapsed) => {
     const list = collapsed ? [...new Set([...get().bannersCollapsed, id])] : get().bannersCollapsed.filter((b) => b !== id)
