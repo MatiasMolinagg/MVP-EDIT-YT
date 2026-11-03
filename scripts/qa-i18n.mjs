@@ -113,6 +113,10 @@ for (const lang of ['es', 'en']) {
       if (!next) break
       await next.click()
     }
+    const fin = await page.$('[data-testid="tour-finish"]')
+    if (fin) await fin.click()
+    await page.waitForSelector('[data-modal]', { timeout: 4000 }).catch(() => problems.push(`[${lang} ${width}px] el modal final del tour no apareció`))
+    await page.waitForTimeout(400)
     await check('tour · modal final')
     await ctx.close()
   }
