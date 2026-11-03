@@ -1,3 +1,7 @@
+import { useParams } from 'react-router-dom'
+import Proyectos from './Proyectos'
+
 export default function ProyectoDetalle() {
-  return <div data-view="proyecto-detalle" className="pb-app">ProyectoDetalle placeholder content for layout testing purposes only.</div>
+  const { id } = useParams()
+  return <Proyectos detailId={id} />
 }
