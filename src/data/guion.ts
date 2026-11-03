@@ -8,7 +8,7 @@ const T = (es: string, en: string): Texto => ({ es, en })
 
 const PLANTILLAS: Record<Exclude<Tematica, 'otra'>, Tpl[]> = {
   historia_finanzas: [
-    { visual: 'titulo', titulo: T('Apertura', 'Opening'), narracion: T('Hoy recorremos {tema}: de dónde viene la forma en que manejamos el dinero y qué podés hacer con eso hoy.', 'Today we explore {tema}: where the way we handle money comes from, and what you can do with it today.') },
+    { visual: 'titulo', titulo: T('Apertura', 'Opening'), narracion: T('El tema de hoy: {tema}. Vamos a ver de dónde viene la forma en que manejamos el dinero y qué podés hacer con eso.', 'Today’s topic: {tema}. We’ll see where the way we handle money comes from, and what you can do with it.') },
     { visual: 'lista', titulo: T('Cómo empezó todo', 'How it all began'), narracion: T('Antes de los bancos, el intercambio marcaba la economía de todos los días. Con el tiempo, {pais} tuvo su propia moneda y sus primeras instituciones financieras.', 'Before banks, trade shaped everyday economic life. Over time, {pais} adopted its own currency and its first financial institutions.'), bullets: [T('Intercambio y comercio local', 'Barter and local trade'), T('Una moneda propia', 'A national currency'), T('Primeros bancos', 'The first banks')] },
     { visual: 'grafico', chart: 'etapas', titulo: T('Etapas y cambios', 'Stages and changes'), narracion: T('La historia económica de {pais} tuvo etapas de crecimiento y etapas difíciles, con inflación y cambios de moneda. Cada etapa cambió cómo ahorran las familias.', 'The economic history of {pais} had stages of growth and hard times, with inflation and currency changes. Each stage changed how families save.') },
     { visual: 'zocalo', titulo: T('La lección que se repite', 'The recurring lesson'), narracion: T('Cuando el dinero pierde valor, las familias que tienen un plan sufren menos. Esa es la idea que nos llevamos de la historia.', 'When money loses value, families with a plan suffer less. That is the idea history leaves us with.') },
@@ -17,7 +17,7 @@ const PLANTILLAS: Record<Exclude<Tematica, 'otra'>, Tpl[]> = {
     { visual: 'titulo', titulo: T('Cierre', 'Closing'), narracion: T('Conocer la historia te ayuda a decidir mejor. Empezá esta semana con un paso: anotá todo lo que gastás durante siete días.', 'Knowing the history helps you decide better. Start this week with one step: write down everything you spend for seven days.') },
   ],
   finanzas_personales: [
-    { visual: 'titulo', titulo: T('Apertura', 'Opening'), narracion: T('En este video vemos {tema}, paso a paso y sin complicaciones.', 'In this video we cover {tema}, step by step and without complications.') },
+    { visual: 'titulo', titulo: T('Apertura', 'Opening'), narracion: T('El tema de hoy: {tema}. Lo vemos paso a paso y sin complicaciones.', 'Today’s topic: {tema}. We’ll go step by step, without complications.') },
     { visual: 'zocalo', titulo: T('Por qué importa', 'Why it matters'), narracion: T('Cuando sabés a dónde va tu dinero, dejás de llegar justo a fin de mes y empezás a decidir vos.', 'When you know where your money goes, you stop scraping by at the end of the month and start making the decisions.') },
     { visual: 'lista', titulo: T('Lo que necesitás', 'What you need'), narracion: T('Solo hacen falta tres cosas: tus ingresos del mes, tus gastos fijos y una lista honesta de los gastos variables.', 'You only need three things: your monthly income, your fixed expenses and an honest list of your variable expenses.'), bullets: [T('Ingresos del mes', 'Monthly income'), T('Gastos fijos', 'Fixed expenses'), T('Gastos variables', 'Variable expenses')] },
     { visual: 'grafico', chart: 'presupuesto', titulo: T('Cómo repartir', 'How to split it'), narracion: T('Una guía práctica es separar necesidades, gustos y ahorro. Ajustá los porcentajes a tu situación, lo importante es que el ahorro exista.', 'A practical guide is to separate needs, wants and savings. Adjust the percentages to your situation; what matters is that savings exist.') },
@@ -26,7 +26,7 @@ const PLANTILLAS: Record<Exclude<Tematica, 'otra'>, Tpl[]> = {
     { visual: 'titulo', titulo: T('Cierre', 'Closing'), narracion: T('Tu tarea para hoy: armá tu primer presupuesto con lo que viste y revisalo en una semana.', 'Your homework for today: build your first budget with what you saw and review it in a week.') },
   ],
   ahorro_inversion: [
-    { visual: 'titulo', titulo: T('Apertura', 'Opening'), narracion: T('Hoy hablamos de {tema}: cómo pasar de guardar lo que sobra a ahorrar con un objetivo.', 'Today we talk about {tema}: how to go from keeping whatever is left to saving with a goal.') },
+    { visual: 'titulo', titulo: T('Apertura', 'Opening'), narracion: T('El tema de hoy: {tema}. Cómo pasar de guardar lo que sobra a ahorrar con un objetivo.', 'Today’s topic: {tema}. How to go from keeping whatever is left to saving with a goal.') },
     { visual: 'zocalo', titulo: T('Ahorrar no es invertir', 'Saving is not investing'), narracion: T('Ahorrar es apartar dinero; invertir es ponerlo a trabajar asumiendo algún riesgo. Primero se ahorra, después se invierte.', 'Saving is setting money aside; investing is putting it to work while taking on some risk. Save first, invest later.') },
     { visual: 'lista', titulo: T('Primero, la base', 'First, the foundation'), narracion: T('Antes de invertir conviene tener un fondo de emergencia, deudas caras bajo control y un objetivo con fecha.', 'Before investing, it helps to have an emergency fund, expensive debt under control and a goal with a date.'), bullets: [T('Fondo de emergencia', 'Emergency fund'), T('Deudas caras controladas', 'Expensive debt under control'), T('Objetivo con fecha', 'A goal with a date')] },
     { visual: 'grafico', chart: 'ahorro', titulo: T('El efecto del tiempo', 'The effect of time'), narracion: T('Cuando los rendimientos se reinvierten, el crecimiento se acelera con los años. Por eso empezar temprano importa más que empezar con mucho.', 'When returns are reinvested, growth accelerates over the years. That is why starting early matters more than starting big.') },
@@ -35,7 +35,7 @@ const PLANTILLAS: Record<Exclude<Tematica, 'otra'>, Tpl[]> = {
     { visual: 'titulo', titulo: T('Cierre', 'Closing'), narracion: T('Definí hoy un objetivo de ahorro y un monto mensual. El hábito es lo que hace la diferencia.', 'Set a savings goal and a monthly amount today. The habit is what makes the difference.') },
   ],
   deudas_credito: [
-    { visual: 'titulo', titulo: T('Apertura', 'Opening'), narracion: T('En este video vemos {tema}, con un plan concreto para recuperar el control.', 'In this video we look at {tema}, with a concrete plan to get back in control.') },
+    { visual: 'titulo', titulo: T('Apertura', 'Opening'), narracion: T('El tema de hoy: {tema}. Con un plan concreto para recuperar el control.', 'Today’s topic: {tema}. With a concrete plan to get back in control.') },
     { visual: 'lista', titulo: T('Hacé la lista', 'Make the list'), narracion: T('El primer paso es anotar todas tus deudas: a quién le debés, cuánto, la cuota mínima y la tasa de interés.', 'The first step is to write down all your debts: who you owe, how much, the minimum payment and the interest rate.'), bullets: [T('A quién le debés', 'Who you owe'), T('Saldo y cuota mínima', 'Balance and minimum payment'), T('Tasa de interés', 'Interest rate')] },
     { visual: 'grafico', chart: 'bola', titulo: T('Método bola de nieve', 'Snowball method'), narracion: T('Con el método bola de nieve pagás primero la deuda más chica. Cuando la cancelás, sumás esa cuota a la siguiente y el pago crece.', 'With the snowball method you pay the smallest debt first. When it’s gone, you add that payment to the next one and the payment grows.') },
     { visual: 'zocalo', titulo: T('La alternativa avalancha', 'The avalanche alternative'), narracion: T('Otra opción es atacar primero la deuda con la tasa más alta. Ahorra intereses, aunque los logros se ven más tarde.', 'Another option is to tackle the highest-rate debt first. It saves interest, although the wins show up later.') },
@@ -77,9 +77,9 @@ export function derivarTitulo(idea: string): string {
   s = s.replace(/^(yo\s+)?(necesito|quiero|quisiera|me gustar[ií]a|hagamos|vamos a)\s+(crear|hacer|armar|grabar)?\s*/i, '')
   s = s.replace(/^(un|una)\s+(video|vídeo)\s*(de\s+finanzas(\s+personales)?\s*,?\s*)?(de|sobre|acerca de|que explique|que hable de)?\s*/i, '')
   s = s.replace(/^i\s+(need|want|would like)\s+(to\s+(create|make)\s+)?(a\s+)?video\s+(about|on|explaining)?\s*/i, '')
-  s = s.replace(/^(la|el|los|las)\s+/i, (m) => m)
-  s = s.replace(/[.!?¡¿]+$/g, '').trim()
-  if (s.length > 82) s = s.slice(0, 82).replace(/\s+\S*$/, '') + '…'
+  s = s.replace(/^(la|el|los|las|the)\s+(?=\S+\s+\S+)/i, '')
+  s = s.replace(/[.!?¡¿,;:]+$/g, '').trim()
+  if (s.length > 100) s = s.slice(0, 100).replace(/\s+\S*$/, '').replace(/\s+(y|de|del|la|las|el|los|a|en|con|and|of|the|to|in|with)$/i, '')
   if (s.length < 6) return ''
   return s.charAt(0).toUpperCase() + s.slice(1)
 }
@@ -103,7 +103,7 @@ export function generarGuion(idea: string, tematica: Tematica, opts: { titulo?: 
   const plantilla = elegirPlantilla(tematica, idea)
   const derivado = derivarTitulo(idea)
   const titulo: Texto = opts.titulo ?? (derivado ? { es: derivado, en: derivado } : TITULOS_BASE[plantilla])
-  const tema: Texto = { es: titulo.es.charAt(0).toLowerCase() + titulo.es.slice(1), en: titulo.en.charAt(0).toLowerCase() + titulo.en.slice(1) }
+  const tema: Texto = { es: `“${titulo.es}”`, en: `“${titulo.en}”` }
   const pais = detectarPais(idea)
   const seed = opts.seed ?? 'g'
   let tpls = PLANTILLAS[plantilla]

@@ -4,6 +4,7 @@ import { useApp } from '@/store/app'
 import { Shell } from '@/components/Shell'
 import { Toasts } from '@/components/Toasts'
 import { JobWatcher } from '@/components/JobWatcher'
+import { Trailer } from '@/components/Trailer'
 import Login from '@/pages/Login'
 import Propuesta from '@/pages/Propuesta'
 import Crear from '@/pages/crear/Crear'
@@ -41,6 +42,7 @@ export default function App() {
         <Route path="*" element={<Navigate to={session ? '/propuesta' : '/login'} replace />} />
       </Routes>
       <Toasts />
+      <Trailer />
       {session && <JobWatcher />}
     </>
   )

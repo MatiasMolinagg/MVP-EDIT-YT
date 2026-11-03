@@ -7,6 +7,7 @@ import { BottomNav } from './BottomNav'
 import { PreviewReturn } from './PreviewReturn'
 import { WelcomeModal } from './WelcomeModal'
 import { Tour } from './Tour'
+import { Agent } from './Agent'
 
 export function Shell() {
   const preview = useApp((s) => s.preview)
@@ -25,6 +26,7 @@ export function Shell() {
       <BottomNav />
       <WelcomeModal />
       <Tour />
+      <Agent />
     </div>
   )
 }

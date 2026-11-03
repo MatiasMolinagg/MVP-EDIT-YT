@@ -52,7 +52,7 @@ export function GuionStage({ video }: { video: Video }) {
   const aprobar = () => {
     stopSpeech()
     if (job && !job.finished && job.videoId !== video.id) useStudio.getState().cancelJob()
-    startJob(video.id)
+    startJob(video.id, useApp.getState().trailer ? 7000 : 12000)
     nav(`/crear/${video.id}/generacion`)
   }
 

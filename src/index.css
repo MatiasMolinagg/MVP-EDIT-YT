@@ -78,10 +78,10 @@ button, [role='button'] { touch-action: manipulation; }
 .anim-pulse-dot { animation: pulseDot 1.6s ease-in-out infinite; }
 
 .safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
-.pb-app { padding-bottom: calc(var(--nav-h) + env(safe-area-inset-bottom) + 24px); }
-@media (min-width: 1024px) { .pb-app { padding-bottom: 48px; } }
-.pb-app-bar { padding-bottom: calc(var(--nav-h) + env(safe-area-inset-bottom) + 96px); }
-@media (min-width: 1024px) { .pb-app-bar { padding-bottom: 48px; } }
+.pb-app { padding-bottom: calc(var(--nav-h) + env(safe-area-inset-bottom) + 88px); }
+@media (min-width: 1024px) { .pb-app { padding-bottom: 96px; } }
+.pb-app-bar { padding-bottom: calc(var(--nav-h) + env(safe-area-inset-bottom) + 160px); }
+@media (min-width: 1024px) { .pb-app-bar { padding-bottom: 96px; } }
 
 .scroll-thin::-webkit-scrollbar { width: 6px; height: 6px; }
 .scroll-thin::-webkit-scrollbar-thumb { background: var(--border); border-radius: 6px; }
