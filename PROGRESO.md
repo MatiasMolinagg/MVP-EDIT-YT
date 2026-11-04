@@ -14,10 +14,11 @@
 - Bloque 11: Propuesta (circuito, módulos, Ver en el demo con retorno, inversión oculta).
 - Bloque 12: Tour manual con spotlight clip-path.
 - Bloque 13: Trailer (11 escenas, loop) y agente pre-programado.
+- Bloque 15: portón completo en verde (logs en qa-evidencia/logs/), probado rompiéndolo a propósito (grilla de Canal y claves i18n) y revertido. Arreglos de lectura: "Hace 1 días" → "Ayer", toasts abajo en escritorio para no tapar notificaciones.
 - Bloque 14: QA responsive completo; arreglos: grilla de Canal desbordaba a 360/390, barra de acción encimada 1 px sobre la bottom-nav, contraste de texto sobre acento en oscuro, etiquetas cortas de la barra de Guion.
 
 ## En curso
-- Bloque 15: portón de calidad y repo.
+- (nada)
 
 ## Pendiente
 - Crear repo en GitHub y entregar URL.

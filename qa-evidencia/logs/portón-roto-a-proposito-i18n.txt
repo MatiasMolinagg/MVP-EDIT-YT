@@ -1,0 +1,17 @@
+Diccionario: 606 claves en 5 archivos
+Código: 527 usos literales de claves en 45 archivos
+Pantallas revisadas: ES 55 · EN 55
+Claves crudas visibles: ES 2 · EN 2
+  ✗ clave declarada dos veces: "bor.titulo" en dict-app.ts y dict-estudio.ts
+  ✗ clave usada y no declarada: "bor.subtitulo" (src/pages/Borradores.tsx)
+  ✗ [es 1280px borradores] clave cruda visible: "bor.subtitulo"
+  ✗ [es 390px borradores] clave cruda visible: "bor.subtitulo"
+  ✗ [en 1280px borradores] clave cruda visible: "bor.subtitulo"
+  ✗ [en 390px borradores] clave cruda visible: "bor.subtitulo"
+  ✗ [es 1280px proyecto-detalle] [i18n] clave faltante: "bor.subtitulo"
+  ✗ [es 390px proyecto-detalle] [i18n] clave faltante: "bor.subtitulo"
+  ✗ [en 1280px proyecto-detalle] [i18n] clave faltante: "bor.subtitulo"
+  ✗ [en 390px proyecto-detalle] [i18n] clave faltante: "bor.subtitulo"
+
+✗ QA ROJO: 10 problemas de i18n
+exit code: 1

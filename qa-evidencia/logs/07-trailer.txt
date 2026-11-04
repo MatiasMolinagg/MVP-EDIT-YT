@@ -1,0 +1,13 @@
+
+> creavo-demo@1.0.0 qa:trailer
+> node scripts/qa-trailer-smoke.mjs
+
+t=3s {"hash":"#/propuesta","caption":"01 · Propuesta","agent":false,"back":false}
+t=26s {"hash":"#/crear","caption":"04 · Tu idea","agent":false,"back":false}
+t=36s {"hash":"#/crear/v-mw1d6ut6/guion","caption":"06 · Guion","agent":false,"back":false}
+t=55s {"hash":"#/crear/v-mw1d6ut6/generacion","caption":"08 · Aviso","agent":false,"back":false}
+t=62s {"hash":"#/crear/v-mw1d6ut6/resultado","caption":"09 · Reproductor","agent":false,"back":false}
+t=80s {"hash":"#/crear/v-mw1d6ut6/resultado","caption":"Contás la idea. Creavo te da el video.","agent":false,"back":false}
+t=88s {"hash":"#/propuesta","caption":"02 · El circuito","agent":false,"back":false}
+después de Esc: #/login
+exit code: 0

@@ -1,0 +1,90 @@
+
+> creavo-demo@1.0.0 qa:responsive
+> node scripts/qa-responsive.mjs
+
+360px capas /crear → barra acción 723–795, bottom-nav top 795, agente bottom 711
+390px capas /crear → barra acción 723–795, bottom-nav top 795, agente bottom 711
+768px capas /crear → barra acción 723–795, bottom-nav top 795, agente bottom 711
+width | view                          | scrollWidth | clientWidth | ok  
+------|-------------------------------|-------------|-------------|-----
+360   | login                         | 360         | 360         | true
+360   | propuesta                     | 360         | 360         | true
+360   | crear-idea                    | 360         | 360         | true
+360   | crear-guion                   | 360         | 360         | true
+360   | crear-generacion              | 360         | 360         | true
+360   | crear-resultado               | 360         | 360         | true
+360   | proyectos                     | 360         | 360         | true
+360   | proyecto-detalle              | 360         | 360         | true
+360   | borradores                    | 360         | 360         | true
+360   | canal                         | 360         | 360         | true
+360   | proveedores                   | 360         | 360         | true
+360   | propuesta (inversión visible) | 360         | 360         | true
+360   | sheet Más abierto             | 360         | 360         | true
+390   | login                         | 390         | 390         | true
+390   | propuesta                     | 390         | 390         | true
+390   | crear-idea                    | 390         | 390         | true
+390   | crear-guion                   | 390         | 390         | true
+390   | crear-generacion              | 390         | 390         | true
+390   | crear-resultado               | 390         | 390         | true
+390   | proyectos                     | 390         | 390         | true
+390   | proyecto-detalle              | 390         | 390         | true
+390   | borradores                    | 390         | 390         | true
+390   | canal                         | 390         | 390         | true
+390   | proveedores                   | 390         | 390         | true
+390   | propuesta (inversión visible) | 390         | 390         | true
+390   | sheet Más abierto             | 390         | 390         | true
+768   | login                         | 768         | 768         | true
+768   | propuesta                     | 768         | 768         | true
+768   | crear-idea                    | 768         | 768         | true
+768   | crear-guion                   | 768         | 768         | true
+768   | crear-generacion              | 768         | 768         | true
+768   | crear-resultado               | 768         | 768         | true
+768   | proyectos                     | 768         | 768         | true
+768   | proyecto-detalle              | 768         | 768         | true
+768   | borradores                    | 768         | 768         | true
+768   | canal                         | 768         | 768         | true
+768   | proveedores                   | 768         | 768         | true
+768   | propuesta (inversión visible) | 768         | 768         | true
+768   | sheet Más abierto             | 768         | 768         | true
+1024  | login                         | 1024        | 1024        | true
+1024  | propuesta                     | 1024        | 1024        | true
+1024  | crear-idea                    | 1024        | 1024        | true
+1024  | crear-guion                   | 1024        | 1024        | true
+1024  | crear-generacion              | 1024        | 1024        | true
+1024  | crear-resultado               | 1024        | 1024        | true
+1024  | proyectos                     | 1024        | 1024        | true
+1024  | proyecto-detalle              | 1024        | 1024        | true
+1024  | borradores                    | 1024        | 1024        | true
+1024  | canal                         | 1024        | 1024        | true
+1024  | proveedores                   | 1024        | 1024        | true
+1024  | propuesta (inversión visible) | 1024        | 1024        | true
+1280  | login                         | 1280        | 1280        | true
+1280  | propuesta                     | 1280        | 1280        | true
+1280  | crear-idea                    | 1280        | 1280        | true
+1280  | crear-guion                   | 1280        | 1280        | true
+1280  | crear-generacion              | 1280        | 1280        | true
+1280  | crear-resultado               | 1280        | 1280        | true
+1280  | proyectos                     | 1280        | 1280        | true
+1280  | proyecto-detalle              | 1280        | 1280        | true
+1280  | borradores                    | 1280        | 1280        | true
+1280  | canal                         | 1280        | 1280        | true
+1280  | proveedores                   | 1280        | 1280        | true
+1280  | propuesta (inversión visible) | 1280        | 1280        | true
+1440  | login                         | 1440        | 1440        | true
+1440  | propuesta                     | 1440        | 1440        | true
+1440  | crear-idea                    | 1440        | 1440        | true
+1440  | crear-guion                   | 1440        | 1440        | true
+1440  | crear-generacion              | 1440        | 1440        | true
+1440  | crear-resultado               | 1440        | 1440        | true
+1440  | proyectos                     | 1440        | 1440        | true
+1440  | proyecto-detalle              | 1440        | 1440        | true
+1440  | borradores                    | 1440        | 1440        | true
+1440  | canal                         | 1440        | 1440        | true
+1440  | proveedores                   | 1440        | 1440        | true
+1440  | propuesta (inversión visible) | 1440        | 1440        | true
+
+Vistas medidas: 75 · con scroll horizontal: 0
+Errores de consola: 0
+
+✓ QA responsive en verde
+exit code: 0

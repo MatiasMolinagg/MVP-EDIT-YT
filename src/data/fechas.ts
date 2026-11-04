@@ -37,5 +37,6 @@ export function horaRelativa(ms: number, lang: Lang): string {
   if (min < 60) return tr('fecha.haceMin', lang, { n: min })
   const h = Math.round(min / 60)
   if (h < 24) return tr('fecha.haceHoras', lang, { n: h })
-  return tr('fecha.haceDias', lang, { n: Math.round(h / 24) })
+  const d = Math.round(h / 24)
+  return d === 1 ? tr('fecha.ayer', lang) : tr('fecha.haceDias', lang, { n: d })
 }

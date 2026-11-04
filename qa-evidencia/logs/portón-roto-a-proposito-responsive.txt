@@ -1,0 +1,36 @@
+360px capas /crear → barra acción 723–795, bottom-nav top 795, agente bottom 711
+390px capas /crear → barra acción 723–795, bottom-nav top 795, agente bottom 711
+width | view                          | scrollWidth | clientWidth | ok   
+------|-------------------------------|-------------|-------------|------
+360   | login                         | 360         | 360         | true 
+360   | propuesta                     | 360         | 360         | true 
+360   | crear-idea                    | 360         | 360         | true 
+360   | crear-guion                   | 360         | 360         | true 
+360   | crear-generacion              | 360         | 360         | true 
+360   | crear-resultado               | 360         | 360         | true 
+360   | proyectos                     | 360         | 360         | true 
+360   | proyecto-detalle              | 360         | 360         | true 
+360   | borradores                    | 360         | 360         | true 
+360   | canal                         | 431         | 360         | false
+360   | proveedores                   | 360         | 360         | true 
+360   | propuesta (inversión visible) | 360         | 360         | true 
+360   | sheet Más abierto             | 360         | 360         | true 
+390   | login                         | 390         | 390         | true 
+390   | propuesta                     | 390         | 390         | true 
+390   | crear-idea                    | 390         | 390         | true 
+390   | crear-guion                   | 390         | 390         | true 
+390   | crear-generacion              | 390         | 390         | true 
+390   | crear-resultado               | 390         | 390         | true 
+390   | proyectos                     | 390         | 390         | true 
+390   | proyecto-detalle              | 390         | 390         | true 
+390   | borradores                    | 390         | 390         | true 
+390   | canal                         | 431         | 390         | false
+390   | proveedores                   | 390         | 390         | true 
+390   | propuesta (inversión visible) | 390         | 390         | true 
+390   | sheet Más abierto             | 390         | 390         | true 
+
+Vistas medidas: 26 · con scroll horizontal: 2
+Errores de consola: 0
+
+✗ QA ROJO: scroll horizontal en: 360px canal (431>360), 390px canal (431>390)
+exit code: 1

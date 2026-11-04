@@ -8,13 +8,13 @@ const errs = []
 watchConsole(p, errs, () => 'trailer')
 await p.goto(base + '#/login')
 await p.click('[data-testid="trailer-link"]')
-const marks = [3, 14, 26, 36, 44, 52, 62, 69, 80, 83, 88]
+const marks = [3, 26, 36, 55, 62, 80, 88]
 let last = 0
 for (const s of marks) {
   await p.waitForTimeout((s - last) * 1000); last = s
   const info = await p.evaluate(() => ({ hash: location.hash, caption: document.querySelector('.glass p.font-mono')?.textContent || document.querySelector('.glass p.text-3xl')?.textContent, agent: !!document.querySelector('[data-testid="agent-fab"]'), back: !!document.querySelector('[data-testid="preview-return"]') }))
   console.log(`t=${s}s`, JSON.stringify(info))
-  await p.screenshot({ path: `qa-output/trailer-${s}.png` })
+  await p.screenshot({ path: `${process.env.SHOTS_DIR || 'qa-output'}/trailer-${s}s.png` })
 }
 await p.keyboard.press('Escape')
 await p.waitForTimeout(500)

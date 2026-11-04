@@ -12,7 +12,7 @@ export function Toasts() {
   const toasts = useApp((s) => s.toasts)
   const dismiss = useApp((s) => s.dismissToast)
   return createPortal(
-    <div className="pointer-events-none fixed inset-x-0 top-[64px] z-[95] flex flex-col items-center gap-2 px-4 sm:inset-x-auto sm:right-4 sm:items-end" aria-live="polite">
+    <div className="pointer-events-none fixed inset-x-0 top-[64px] z-[95] flex flex-col items-center gap-2 px-4 lg:bottom-6 lg:top-auto lg:pl-[248px]" aria-live="polite">
       {toasts.map((x) => {
         const I = ICON[x.tone]
         return (

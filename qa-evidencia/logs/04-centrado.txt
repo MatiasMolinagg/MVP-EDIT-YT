@@ -1,0 +1,30 @@
+
+> creavo-demo@1.0.0 qa:centrado
+> node scripts/qa-centrado.mjs
+
+viewport | modal                       | Δx px | Δy px | tamaño  | entra | ok  
+---------|-----------------------------|-------|-------|---------|-------|-----
+1440×900 | ¿Olvidaste tu contraseña?   | 0     | 0     | 420×272 | true  | true
+1440×900 | Welcome                     | 0     | 0     | 520×437 | true  | true
+1440×900 | Desconectar canal           | 0     | 0     | 420×194 | true  | true
+1440×900 | Conectar canal (simulación) | 0     | 0     | 460×454 | true  | true
+1440×900 | Eliminar borrador           | 0     | 0     | 420×194 | true  | true
+1440×900 | Tour · paso 1 (centrado)    | 0     | 0     | 360×222 | true  | true
+1440×900 | Tour · modal final          | 0     | 0     | 440×310 | true  | true
+1920×854 | ¿Olvidaste tu contraseña?   | 0     | 0     | 420×272 | true  | true
+1920×854 | Welcome                     | 0     | 0     | 520×437 | true  | true
+1920×854 | Desconectar canal           | 0     | 0     | 420×194 | true  | true
+1920×854 | Conectar canal (simulación) | 0     | 0     | 460×454 | true  | true
+1920×854 | Eliminar borrador           | 0     | 0     | 420×194 | true  | true
+1920×854 | Tour · paso 1 (centrado)    | 0     | 0     | 360×222 | true  | true
+1920×854 | Tour · modal final          | 0     | 0     | 440×310 | true  | true
+375×812  | ¿Olvidaste tu contraseña?   | 0     | 0     | 343×264 | true  | true
+375×812  | Welcome                     | 0     | 0     | 343×527 | true  | true
+375×812  | Desconectar canal           | 0     | 0     | 343×286 | true  | true
+375×812  | Conectar canal (simulación) | 0     | 0     | 343×446 | true  | true
+375×812  | Eliminar borrador           | 0     | 0     | 343×258 | true  | true
+375×812  | Tour · paso 1 (centrado)    | 0     | 0     | 351×222 | true  | true
+375×812  | Tour · modal final          | 0     | 0     | 343×302 | true  | true
+
+✓ QA centrado en verde (desvío 0 px)
+exit code: 0

@@ -1,0 +1,18 @@
+
+> creavo-demo@1.0.0 qa:rutas
+> node scripts/qa-rutas.mjs
+
+sesion | ruta                         | http         | resultado                                                                 | ok  
+-------|------------------------------|--------------|---------------------------------------------------------------------------|-----
+no     | /#/propuesta                 | 200          | login montado                                                             | true
+no     | /#/crear/v-demo/resultado    | 200          | login montado                                                             | true
+no     | /#/proyectos/v-001           | 200          | login montado                                                             | true
+no     | /#/configuracion/proveedores | 200          | login montado                                                             | true
+sí     | login →                      | 200          | aterrizó en #/propuesta                                                   | true
+sí     | /#/propuesta                 | 200 / F5 200 | directo:OK(2408 chars) F5:OK(2408 chars) hash:#/propuesta                 | true
+sí     | /#/crear/v-demo/resultado    | 200 / F5 200 | directo:OK(1850 chars) F5:OK(1850 chars) hash:#/crear/v-demo/resultado    | true
+sí     | /#/proyectos/v-001           | 200 / F5 200 | directo:OK(1441 chars) F5:OK(1441 chars) hash:#/proyectos/v-001           | true
+sí     | /#/configuracion/proveedores | 200 / F5 200 | directo:OK(1754 chars) F5:OK(1754 chars) hash:#/configuracion/proveedores | true
+
+✓ QA rutas en verde
+exit code: 0

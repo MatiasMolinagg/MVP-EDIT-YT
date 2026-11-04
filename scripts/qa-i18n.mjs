@@ -98,7 +98,7 @@ for (const lang of ['es', 'en']) {
     await page.goto(base + '#/login'); await page.waitForSelector('[data-view="login"]'); await check('login')
     await page.click('[data-testid="forgot-open"]'); await page.waitForSelector('[data-modal]'); await check('login · olvidé contraseña'); await page.keyboard.press('Escape')
     await login(page, base, { closeWelcome: false }); await check('welcome'); await page.click('[data-testid="welcome-close"]')
-    for (const v of VIEWS) { await gotoView(page, base, v); await page.waitForTimeout(v.view === 'crear-guion' ? 2600 : 200); await check(v.view) }
+    for (const v of VIEWS) { cur = v.view; await gotoView(page, base, v); await page.waitForTimeout(v.view === 'crear-guion' ? 2600 : 200); await check(v.view) }
     await gotoView(page, base, VIEWS[0]); await page.click('[data-testid="price-toggle"]'); await page.waitForTimeout(300); await check('propuesta · inversión visible')
     await page.click('[data-testid="notif-btn"]'); await page.waitForTimeout(250); await check('notificaciones'); await page.keyboard.press('Escape')
     await page.click('[data-testid="agent-fab"]'); await page.waitForTimeout(300)

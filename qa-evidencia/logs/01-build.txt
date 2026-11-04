@@ -1,0 +1,7 @@
+rendering chunks...
+computing gzip size...
+dist/index.html                   1.44 kB │ gzip:   0.68 kB
+dist/assets/index-CPo__HmZ.css   49.32 kB │ gzip:   9.52 kB
+dist/assets/index-DVOi8HyE.js   983.35 kB │ gzip: 284.51 kB
+✓ built in 4.67s
+exit code: 0

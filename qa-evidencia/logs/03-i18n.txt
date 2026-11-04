@@ -1,0 +1,11 @@
+
+> creavo-demo@1.0.0 qa:i18n
+> node scripts/qa-i18n.mjs
+
+Diccionario: 606 claves en 5 archivos
+Código: 528 usos literales de claves en 45 archivos
+Pantallas revisadas: ES 55 · EN 55
+Claves crudas visibles: ES 0 · EN 0
+
+✓ QA i18n en verde: 0 claves crudas en ES y EN, 0 duplicadas, 0 faltantes
+exit code: 0

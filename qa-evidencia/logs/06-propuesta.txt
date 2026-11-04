@@ -1,0 +1,47 @@
+
+> creavo-demo@1.0.0 qa:propuesta
+> node scripts/qa-propuesta.mjs
+
+check                                                                    | ok   | detalle                                                                                                       
+-------------------------------------------------------------------------|------|---------------------------------------------------------------------------------------------------------------
+[1440] login aterriza en /propuesta                                      | true | #/propuesta                                                                                                   
+[1440] inversión oculta por defecto                                      | true | sin monto en pantalla                                                                                         
+[1440] ojito cómodo (≥44px de alto)                                      | true | 165×52                                                                                                        
+[1440] revela el monto                                                   | true | USD 5.000                                                                                                     
+[1440] monto sin desbordar                                               | true | {"r":1383,"vw":1440,"sw":1440}                                                                                
+[1440] desglose y condiciones                                            | true |                                                                                                               
+[1440] segundo click oculta                                              | true |                                                                                                               
+[1440] tras F5 arranca oculta                                            | true |                                                                                                               
+[1440] sin textos prohibidos ni montos fuera de la Propuesta (10 vistas) | true |                                                                                                               
+[1440] CTAs WhatsApp (3) con nombre y URL únicos                         | true | Avanzar por WhatsApp                                                                                          
+[1440] Ver en el demo 01                                                 | true | #/crear · idea sembrada:true · retorno:true "Volver a la propuesta Estás viendo: 01 · Panel único de creación"
+[1440] Ver en el demo 02                                                 | true | #/crear · micrófono resaltado:true · retorno:true "Volver a la propuesta Estás viendo: 02 · Idea por texto y p
+[1440] Ver en el demo 03                                                 | true | #/crear/v-demo/generacion · pipeline corriendo:true · retorno:true "Volver a la propuesta Estás viendo: 03 · G
+[1440] Ver en el demo 04                                                 | true | #/crear/v-demo/resultado · reproductor:true · retorno:true "Volver a la propuesta Estás viendo: 04 · Descarga 
+[1440] Ver en el demo 05                                                 | true | #/canal · canal conectado:true · retorno:true "Volver a la propuesta Estás viendo: 05 · Canal de YouTube y sub
+[1440] Ver en el demo 06                                                 | true | #/configuracion/proveedores · proveedores:true · retorno:true "Volver a la propuesta Estás viendo: 06 · Cuenta
+[1440] navegar por el menú cancela la previsualización                   | true |                                                                                                               
+[390] login aterriza en /propuesta                                       | true | #/propuesta                                                                                                   
+[390] inversión oculta por defecto                                       | true | sin monto en pantalla                                                                                         
+[390] ojito cómodo (≥44px de alto)                                       | true | 316×52                                                                                                        
+[390] revela el monto                                                    | true | USD 5.000                                                                                                     
+[390] monto sin desbordar                                                | true | {"r":353,"vw":390,"sw":390}                                                                                   
+[390] desglose y condiciones                                             | true |                                                                                                               
+[390] segundo click oculta                                               | true |                                                                                                               
+[390] tras F5 arranca oculta                                             | true |                                                                                                               
+[390] sin textos prohibidos ni montos fuera de la Propuesta (10 vistas)  | true |                                                                                                               
+[390] CTAs WhatsApp (4) con nombre y URL únicos                          | true | Avanzar por WhatsApp                                                                                          
+[390] Ver en el demo 01                                                  | true | #/crear · idea sembrada:true · retorno:true "Volver a la propuesta Estás viendo: 01 · Panel único de creación"
+[390] Ver en el demo 02                                                  | true | #/crear · micrófono resaltado:true · retorno:true "Volver a la propuesta Estás viendo: 02 · Idea por texto y p
+[390] Ver en el demo 03                                                  | true | #/crear/v-demo/generacion · pipeline corriendo:true · retorno:true "Volver a la propuesta Estás viendo: 03 · G
+[390] Ver en el demo 04                                                  | true | #/crear/v-demo/resultado · reproductor:true · retorno:true "Volver a la propuesta Estás viendo: 04 · Descarga 
+[390] Ver en el demo 05                                                  | true | #/canal · canal conectado:true · retorno:true "Volver a la propuesta Estás viendo: 05 · Canal de YouTube y sub
+[390] Ver en el demo 06                                                  | true | #/configuracion/proveedores · proveedores:true · retorno:true "Volver a la propuesta Estás viendo: 06 · Cuenta
+[390] navegar por el menú cancela la previsualización                    | true |                                                                                                               
+[390] dictado fallback escribe en vivo + DevNotice                       | true | a 1.2s: "Necesito un video sobre la his…" · final: "Necesito un video sobre la historia de las finanza…" · Dev
+[390] tour paso 2 apunta a la bottom-nav                                 | true | {"title":"Tu menú","ring":{"top":773,"left":-6,"w":402},"tipInside":true}                                     
+[390] tour "4. Borradores" apunta al botón Más                           | true | {"title":"4. Borradores","ring":{"top":774,"left":306,"w":90},"tipInside":true}                               
+[390] tour: los 10 pasos con tooltip dentro de pantalla                  | true | Te mostramos Creavo en 1 minuto › Tu menú › 1. Propuesta › 2. Crear video › 3. Mis videos › 4. Borradores › 5.
+
+✓ QA propuesta/funcional en verde (38 chequeos)
+exit code: 0
