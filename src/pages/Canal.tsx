@@ -33,7 +33,7 @@ export default function Canal() {
       <PreviewBanner id="canal" />
       <PageHeader title={t('canal.titulo')} sub={t('canal.sub')} />
       {conectado ? (
-        <div className="grid gap-5 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
           <section className="card p-5" data-testid="channel-card">
             <div className="flex items-center gap-3">
               <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-emerald-400 to-teal-600 text-lg font-extrabold text-white">FC</span>

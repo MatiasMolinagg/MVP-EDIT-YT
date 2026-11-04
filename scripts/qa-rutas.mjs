@@ -18,6 +18,7 @@ let cur = ''
   watchConsole(page, errors, () => 'sin-sesion ' + cur)
   for (const r of ROUTES) {
     cur = r.route
+    await page.goto('about:blank')
     const res = await page.goto(base + '#' + r.route)
     const ok = await page.waitForSelector('[data-view="login"]', { timeout: 8000 }).then(() => true, () => false)
     rows.push({ sesion: 'no', ruta: '/#' + r.route, http: res.status(), resultado: ok ? 'login montado' : 'NO MONTÓ', ok })
@@ -32,6 +33,7 @@ let cur = ''
   rows.push({ sesion: 'sí', ruta: 'login →', http: 200, resultado: 'aterrizó en ' + landed, ok: landed === '#/propuesta' })
   for (const r of ROUTES) {
     cur = r.route
+    await page.goto('about:blank') // carga real del documento (pegar la URL en la barra)
     const res = await page.goto(base + '#' + r.route)
     const a = await page.waitForSelector(`[data-view="${r.view}"]`, { timeout: 8000 }).then(() => true, () => false)
     const textA = a ? (await page.innerText(`[data-view="${r.view}"]`)).length : 0

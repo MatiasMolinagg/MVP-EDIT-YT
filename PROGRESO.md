@@ -1,18 +1,32 @@
 # PROGRESO — Creavo demo
 
 ## Completado
-- Bloque 1: scaffold Vite + React 18 + TS + Tailwind v3, tokens claro/oscuro, fuentes, HashRouter, anti-flash, manifest + íconos, render.yaml, scripts QA.
-- Bloque 2: i18n (diccionario por archivos + useT + tr pura), stores (app + studio persistido en sessionStorage), marca.ts, mock completo, plantillas de guion, pipeline.
+- Bloque 1: scaffold, tokens claro/oscuro, fuentes, HashRouter, anti-flash, manifest + íconos, render.yaml, scripts QA.
+- Bloque 2: i18n (diccionario por archivos + useT + tr pura), stores (app + studio en sessionStorage), marca.ts, mock, plantillas de guion, pipeline.
+- Bloque 3: shell (sidebar, bottom-nav, sheet Más, topbar, banners, DevNotice, toasts, notificaciones, retorno de preview).
+- Bloque 4: login dos columnas + Welcome modal.
+- Bloque 5: /crear Idea con dictado real + fallback.
+- Bloque 6: Guion con efecto de escritura, escenas editables, voces con muestra.
+- Bloque 7: Generación con cola en tiempo real, reintento 1/3 y aviso.
+- Bloque 8: Resultado con reproductor de escenas, descarga y publicación.
+- Bloque 9: Mis videos, detalle lateral y Borradores.
+- Bloque 10: Canal de YouTube y Proveedores de IA.
+- Bloque 11: Propuesta (circuito, módulos, Ver en el demo con retorno, inversión oculta).
+- Bloque 12: Tour manual con spotlight clip-path.
+- Bloque 13: Trailer (11 escenas, loop) y agente pre-programado.
+- Bloque 14: QA responsive completo; arreglos: grilla de Canal desbordaba a 360/390, barra de acción encimada 1 px sobre la bottom-nav, contraste de texto sobre acento en oscuro, etiquetas cortas de la barra de Guion.
 
 ## En curso
-- Bloque 3: shell.
+- Bloque 15: portón de calidad y repo.
 
 ## Pendiente
-- Bloques 3–15.
+- Crear repo en GitHub y entregar URL.
 
 ## Decisiones
-- Servidor de QA propio (scripts/lib.mjs) que sirve `dist/` sin fallback SPA (equivale a `serve dist` sin `-s`).
-- Modales animados con CSS (`scale`/`translate`/`opacity` individuales), no framer-motion, para no tocar `transform`.
+- Servidor de QA propio (scripts/lib.mjs) que sirve `dist/` sin fallback SPA.
+- Modales animados con CSS (`scale`/`translate`/`opacity` individuales).
+- Script extra `qa:propuesta` para lo funcional del portón (inversión, Ver en el demo, dictado fallback, CTAs, tour 390).
+- El trailer guarda y restaura el estado del estudio al salir.
 
 ## Bloqueos
-- `gh` en el contenedor tiene un token inválido (GH_TOKEN). Se resuelve al final, antes de crear el repo.
+- `gh` del contenedor con GH_TOKEN inválido: se resuelve al crear el repo.

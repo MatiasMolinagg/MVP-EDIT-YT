@@ -13,7 +13,7 @@
   --accent-hover: #4f46e5;
   --accent-soft: #eef2ff;
   --glass: rgba(255, 255, 255, 0.78);
-  --nav-h: 64px;
+  --nav-h: 65px;
   color-scheme: light;
 }
 .dark {
@@ -94,3 +94,7 @@ button, [role='button'] { touch-action: manipulation; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+/* Texto sobre fondo de acento: blanco en claro, casi negro en oscuro (acento más claro). */
+.on-accent { color: #fff; }
+.dark .on-accent { color: #0b0b12; }

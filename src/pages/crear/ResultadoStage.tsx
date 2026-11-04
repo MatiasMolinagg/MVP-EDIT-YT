@@ -48,7 +48,7 @@ export function ResultadoStage({ video }: { video: Video }) {
       <p className="mb-3 text-[17px] font-bold leading-snug">{L(video.titulo)}</p>
       <Player video={video} />
       <DevNotice className="mt-3" f="dev.preview.f" ahora="dev.preview.ahora" luego="dev.preview.luego" />
-      <div className="mt-6 grid gap-5 xl:grid-cols-2">
+      <div className="mt-6 grid grid-cols-1 gap-5 xl:grid-cols-2">
         <DownloadCard />
         <PublishCard video={video} />
       </div>
@@ -164,7 +164,7 @@ function PublishCard({ video }: { video: Video }) {
           </div>
           <div>
             <span className="mb-1.5 block text-sm font-medium">{t('res.campo.vis')}</span>
-            <div className="grid gap-2 sm:grid-cols-3" role="radiogroup" aria-label={t('res.campo.vis')}>
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-3" role="radiogroup" aria-label={t('res.campo.vis')}>
               {VIS.map(({ v, icon: I }) => (
                 <button key={v} role="radio" aria-checked={vis === v} onClick={() => setVis(v)} className={cn('flex min-h-[52px] items-center gap-2.5 rounded-lg border px-3 py-2 text-left transition', vis === v ? 'border-accent bg-accent-soft' : 'border-line hover:bg-surface-2')}>
                   <I size={17} className={cn('shrink-0', vis === v ? 'text-accent' : 'text-ink-2')} />

@@ -105,7 +105,7 @@ export function PreviewBanner({ id }: { id: string }) {
     <section className="mb-6 rounded-xl border border-accent/25 bg-accent-soft/60 p-4 sm:p-5" aria-label={t('banner.preview')}>
       <div className="flex items-start justify-between gap-3">
         <div className="flex flex-wrap gap-2">
-          <span className="rounded-full bg-accent px-2.5 py-1 text-[10.5px] font-bold tracking-wider text-white dark:text-[#0b0b12]">{t('banner.preview')}</span>
+          <span className="rounded-full bg-accent px-2.5 py-1 text-[10.5px] font-bold tracking-wider on-accent">{t('banner.preview')}</span>
           <span className="rounded-full border border-accent/40 px-2.5 py-1 text-[10.5px] font-bold tracking-wider text-accent">{t('banner.mock')}</span>
         </div>
         <button onClick={() => collapse(id, true)} className="tap -mr-2 -mt-2 inline-flex items-center justify-center gap-1 rounded-lg px-2 text-xs font-semibold text-ink-2 hover:text-ink">
@@ -113,7 +113,7 @@ export function PreviewBanner({ id }: { id: string }) {
         </button>
       </div>
       <p className="mt-3 text-[15px] font-semibold">{t(`banner.${id}.title`)}</p>
-      <ul className="mt-2 grid gap-1.5 text-sm text-ink-2 md:grid-cols-3 md:gap-4">
+      <ul className="mt-2 grid grid-cols-1 gap-1.5 text-sm text-ink-2 md:grid-cols-3 md:gap-4">
         {[1, 2, 3].map((n) => (
           <li key={n} className="flex gap-2"><Check size={16} className="mt-0.5 shrink-0 text-accent" /><span>{t(`banner.${id}.b${n}`)}</span></li>
         ))}

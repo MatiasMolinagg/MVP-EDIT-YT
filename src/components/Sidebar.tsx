@@ -47,7 +47,7 @@ export function Sidebar() {
           <p className="mt-2 text-center text-[10px] text-ink-2">{t('app.poweredBy')}</p>
         </div>
         <div className="mt-3 flex items-center gap-2.5 px-1">
-          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent text-sm font-bold text-white dark:text-[#0b0b12]">JC</span>
+          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent text-sm font-bold on-accent">JC</span>
           <div className="min-w-0 flex-1">
             <p className="truncate text-sm font-semibold">{t('app.usuario')}</p>
             <p className="text-xs text-ink-2">{t('app.rol')}</p>

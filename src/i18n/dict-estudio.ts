@@ -87,6 +87,8 @@ export const dictEstudio = {
   'guion.regenerar': ['Regenerar guion', 'Regenerate script'],
   'guion.regenerado': ['Guion regenerado con otro orden de escenas.', 'Script regenerated with a different scene order.'],
   'guion.aprobar': ['Aprobar y generar video', 'Approve and generate video'],
+  'guion.aprobar.corto': ['Aprobar y generar', 'Approve & generate'],
+  'guion.regenerar.corto': ['Regenerar', 'Regenerate'],
   'guion.vozElegida': ['Voz elegida: {voz}', 'Voice selected: {voz}'],
   'guion.noEncontrado': ['No encontramos ese video.', 'We couldn’t find that video.'],
   'guion.irCrear': ['Crear un video nuevo', 'Create a new video'],

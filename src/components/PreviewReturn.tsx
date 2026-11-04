@@ -21,7 +21,7 @@ export function PreviewReturn() {
   if (!preview || trailer) return null
   return (
     <div data-testid="preview-return" className="no-print fixed left-3 right-3 top-[64px] z-[35] flex flex-wrap items-center gap-2 lg:left-[264px]">
-      <button onClick={volver} className="relative inline-flex min-h-[44px] items-center gap-2 rounded-full bg-accent pl-3 pr-4 text-sm font-semibold text-white shadow-lg dark:text-[#0b0b12]">
+      <button onClick={volver} className="relative inline-flex min-h-[44px] items-center gap-2 rounded-full bg-accent pl-3 pr-4 text-sm font-semibold on-accent shadow-lg">
         <span className="anim-halo pointer-events-none absolute inset-0 rounded-full bg-accent" aria-hidden />
         <ArrowLeft size={17} className="relative" />
         <span className="relative">{t('preview.volver')}</span>

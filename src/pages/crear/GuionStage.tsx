@@ -85,13 +85,13 @@ export function GuionStage({ video }: { video: Video }) {
 
       <section className="mt-8">
         <h2 className="kpi-label">{t('guion.voz')}</h2>
-        <div className="mt-3 grid gap-3 sm:grid-cols-2">
+        <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
           {VOCES.map((v) => {
             const on = video.voz === v.id
             return (
               <div key={v.id} className={cn('card flex items-center gap-3 p-3 transition', on && 'border-accent ring-2 ring-accent/20')}>
                 <button onClick={() => { setVoz(video.id, v.id); toast('guion.vozElegida', { voz: t(`voz.${v.id}`) }, 'info') }} role="radio" aria-checked={on} className="flex min-h-[44px] min-w-0 flex-1 items-center gap-3 text-left">
-                  <span className={cn('flex h-10 w-10 shrink-0 items-center justify-center rounded-full font-bold', on ? 'bg-accent text-white dark:text-[#0b0b12]' : 'bg-surface-2 text-ink-2')}>
+                  <span className={cn('flex h-10 w-10 shrink-0 items-center justify-center rounded-full font-bold', on ? 'bg-accent on-accent' : 'bg-surface-2 text-ink-2')}>
                     {on ? <Check size={17} /> : t(`voz.${v.id}`).charAt(0)}
                   </span>
                   <span className="min-w-0">
@@ -111,8 +111,8 @@ export function GuionStage({ video }: { video: Video }) {
       </section>
 
       <ActionBar>
-        <button onClick={() => { regenerar(video.id); toast('guion.regenerado', undefined, 'info') }} disabled={writing} className="btn-secondary"><RefreshCw size={17} /> {t('guion.regenerar')}</button>
-        <button onClick={aprobar} disabled={writing} data-testid="approve" data-trailer="approve" className="btn-primary"><Rocket size={17} /> <span className="truncate">{t('guion.aprobar')}</span></button>
+        <button onClick={() => { regenerar(video.id); toast('guion.regenerado', undefined, 'info') }} disabled={writing} className="btn-secondary"><RefreshCw size={17} /> <span className="lg:hidden">{t('guion.regenerar.corto')}</span><span className="hidden lg:inline">{t('guion.regenerar')}</span></button>
+        <button onClick={aprobar} disabled={writing} data-testid="approve" data-trailer="approve" className="btn-primary"><Rocket size={17} /> <span className="truncate lg:hidden">{t('guion.aprobar.corto')}</span><span className="hidden lg:inline">{t('guion.aprobar')}</span></button>
       </ActionBar>
     </div>
   )

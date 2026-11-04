@@ -104,7 +104,7 @@ export function Player({ video, stickyMobile = true }: { video: Video; stickyMob
           )}
         </div>
         <div className="mt-2 flex items-center gap-2 sm:gap-3">
-          <button onClick={toggle} data-testid="player-play" className="tap inline-flex shrink-0 items-center justify-center rounded-lg bg-accent text-white dark:text-[#0b0b12]" aria-label={t(playing ? 'res.pausa' : 'res.play')}>
+          <button onClick={toggle} data-testid="player-play" className="tap inline-flex shrink-0 items-center justify-center rounded-lg bg-accent on-accent" aria-label={t(playing ? 'res.pausa' : 'res.play')}>
             {playing ? <Pause size={18} fill="currentColor" /> : <Play size={18} fill="currentColor" />}
           </button>
           <span className="shrink-0 font-mono text-xs text-ink-2">{fmt(time)} / {fmt(total)}</span>
@@ -146,7 +146,7 @@ export function Player({ video, stickyMobile = true }: { video: Video; stickyMob
             <li key={e.id} className="shrink-0">
               <button onClick={() => setTime(i * SCENE_SEC + 0.01)} aria-current={i === idx ? 'true' : undefined}
                 className={cn('flex min-h-[44px] w-[168px] items-center gap-2 rounded-lg border px-2.5 py-1.5 text-left transition', i === idx ? 'border-accent bg-accent-soft' : 'border-line hover:bg-surface-2')}>
-                <span className={cn('flex h-6 w-6 shrink-0 items-center justify-center rounded-md font-mono text-[11px] font-bold', i === idx ? 'bg-accent text-white dark:text-[#0b0b12]' : 'bg-surface-2 text-ink-2')}>{i + 1}</span>
+                <span className={cn('flex h-6 w-6 shrink-0 items-center justify-center rounded-md font-mono text-[11px] font-bold', i === idx ? 'bg-accent on-accent' : 'bg-surface-2 text-ink-2')}>{i + 1}</span>
                 <span className="min-w-0">
                   <span className="block truncate text-xs font-semibold">{L(e.titulo)}</span>
                   <span className="block font-mono text-[10.5px] text-ink-2">{fmt(i * SCENE_SEC)}</span>

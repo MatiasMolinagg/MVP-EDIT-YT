@@ -66,11 +66,11 @@ export default function Propuesta() {
       <section className="mt-12" data-trailer="circuito">
         <h2 className="text-xl font-extrabold tracking-tight sm:text-2xl">{t('prop.circuito')}</h2>
         <p className="mt-1 text-sm text-ink-2">{t('prop.circuito.sub')}</p>
-        <ol className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+        <ol className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-5">
           {PASOS.map((I, i) => {
             const key = i === 3
             return (
-              <li key={i} className={cn('relative flex flex-col rounded-xl border p-4', key ? 'border-accent bg-accent text-white shadow-lg shadow-accent/25 dark:text-[#0b0b12]' : 'card')}>
+              <li key={i} className={cn('relative flex flex-col rounded-xl border p-4', key ? 'border-accent bg-accent on-accent shadow-lg shadow-accent/25' : 'card')}>
                 <div className="flex items-center justify-between gap-2">
                   <span className={cn('font-mono text-[11px] font-bold tracking-wider', key ? 'opacity-80' : 'text-accent')}>{t('prop.paso', { n: i + 1 })}</span>
                   <I size={18} className={key ? '' : 'text-ink-2'} />
@@ -90,7 +90,7 @@ export default function Propuesta() {
           <h2 className="text-xl font-extrabold tracking-tight sm:text-2xl">{t('prop.incluye')}</h2>
           <span className="rounded-full border border-line px-3 py-1 font-mono text-xs font-semibold text-ink-2">{t('prop.contador')}</span>
         </div>
-        <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {MODULOS.map((m) => (
             <article
               key={m.n}
@@ -143,7 +143,7 @@ export default function Propuesta() {
               <div className="border-t border-line p-5 sm:p-6" data-testid="inversion-detalle">
                 <p className="kpi-label">{t('prop.inv.total')}</p>
                 <p className="mt-1 break-words font-mono font-bold leading-none tracking-tight text-accent" style={{ fontSize: 'clamp(40px, 8vw, 56px)' }} data-testid="monto">{formatMonto(MARCA.precioTotal, lang)}</p>
-                <div className="mt-6 grid gap-5 md:grid-cols-2">
+                <div className="mt-6 grid grid-cols-1 gap-5 md:grid-cols-2">
                   <Item t={t('prop.inv.pago.t')}>{t('prop.inv.pago')}</Item>
                   <Item t={t('prop.inv.plazo.t')}>{t('prop.inv.plazo', { s: MARCA.plazoSemanas, p: MARCA.primeraVersionSemanas })}</Item>
                   <Item t={t('prop.inv.incluye.t')}>

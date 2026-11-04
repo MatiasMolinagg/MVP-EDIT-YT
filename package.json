@@ -11,7 +11,10 @@
     "qa:i18n": "node scripts/qa-i18n.mjs",
     "qa:centrado": "node scripts/qa-centrado.mjs",
     "qa:rutas": "node scripts/qa-rutas.mjs",
-    "qa": "npm run build && npm run qa:responsive && npm run qa:i18n && npm run qa:centrado && npm run qa:rutas"
+    "qa": "npm run build && npm run qa:responsive && npm run qa:i18n && npm run qa:centrado && npm run qa:rutas && npm run qa:propuesta",
+    "qa:propuesta": "node scripts/qa-propuesta.mjs",
+    "qa:trailer": "node scripts/qa-trailer-smoke.mjs",
+    "qa:evidencia": "node scripts/evidencia.mjs"
   },
   "dependencies": {
     "@types/react": "18.3.12",

@@ -99,7 +99,7 @@ export function Agent() {
         onClick={() => setOpen(!open)}
         aria-label={t(open ? 'agent.cerrar' : 'agent.abrir')}
         aria-expanded={open}
-        className="no-print fixed right-4 z-[45] flex h-14 w-14 items-center justify-center rounded-full bg-accent text-white shadow-[0_8px_28px_-4px_var(--accent)] transition hover:bg-accent-hover dark:text-[#0b0b12]"
+        className="no-print fixed right-4 z-[45] flex h-14 w-14 items-center justify-center rounded-full bg-accent on-accent shadow-[0_8px_28px_-4px_var(--accent)] transition hover:bg-accent-hover"
         style={{ bottom }}
       >
         {open ? <X size={22} /> : <Sparkles size={22} />}
@@ -113,7 +113,7 @@ export function Agent() {
           className="anim-panel fixed right-4 z-[46] flex h-[min(540px,64vh)] w-[min(400px,calc(100vw-2rem))] flex-col overflow-hidden rounded-2xl border border-line bg-surface shadow-2xl"
           style={{ bottom: 'calc(var(--agent-bottom) + 68px)', maxHeight: 'calc(100dvh - var(--agent-bottom) - 68px - 64px)' }}
         >
-          <header className="flex items-center gap-3 border-b border-line bg-accent px-4 py-3 text-white dark:text-[#0b0b12]">
+          <header className="flex items-center gap-3 border-b border-line bg-accent px-4 py-3 on-accent">
             <span className="flex h-9 w-9 items-center justify-center rounded-full bg-white/20"><Sparkles size={18} /></span>
             <div className="min-w-0 flex-1">
               <p className="text-sm font-bold">{t('agent.nombre')}</p>
@@ -124,7 +124,7 @@ export function Agent() {
           <div ref={bodyRef} className="flex-1 space-y-3 overflow-y-auto overscroll-contain p-4">
             {msgs.map((m) => (
               <div key={m.id} className={cn('flex', m.from === 'me' ? 'justify-end' : 'justify-start')}>
-                <p className={cn('max-w-[85%] whitespace-pre-line rounded-2xl px-3.5 py-2.5 text-sm leading-relaxed', m.from === 'me' ? 'rounded-br-md bg-accent text-white dark:text-[#0b0b12]' : 'rounded-bl-md bg-surface-2')}>
+                <p className={cn('max-w-[85%] whitespace-pre-line rounded-2xl px-3.5 py-2.5 text-sm leading-relaxed', m.from === 'me' ? 'rounded-br-md bg-accent on-accent' : 'rounded-bl-md bg-surface-2')}>
                   {m.text}{m.typing && <span className="ml-0.5 inline-block h-3.5 w-[2px] animate-pulse bg-current align-middle" />}
                 </p>
               </div>

@@ -72,7 +72,7 @@ export function IdeaStage() {
               onClick={toggleMic}
               aria-pressed={dict.recording}
               aria-label={t(dict.recording ? 'idea.mic.parar' : 'idea.mic')}
-              className={cn('relative flex h-14 w-14 items-center justify-center rounded-full text-white shadow-lg transition', dict.recording ? 'bg-red-500 hover:bg-red-600' : 'bg-accent hover:bg-accent-hover dark:text-[#0b0b12]')}
+              className={cn('relative flex h-14 w-14 items-center justify-center rounded-full shadow-lg transition', dict.recording ? 'bg-red-500 text-white hover:bg-red-600' : 'bg-accent on-accent hover:bg-accent-hover')}
             >
               {dict.recording ? <Square size={20} fill="currentColor" /> : <Mic size={24} />}
               {dict.recording && <span className="absolute inset-0 animate-ping rounded-full bg-red-500/40" />}
@@ -113,7 +113,7 @@ export function IdeaStage() {
         </div>
 
         <h2 className="kpi-label mt-7">{t('idea.parametros')}</h2>
-        <div className="mt-3 grid gap-4 sm:grid-cols-2">
+        <div className="mt-3 grid grid-cols-1 gap-4 sm:grid-cols-2">
           <Segmented label={t('idea.duracion')} value={form.duracionMin} options={DURACIONES.map((d) => ({ v: d, l: t('unidad.min', { n: d }) }))} onChange={(v) => setForm({ duracionMin: v })} />
           <Segmented label={t('idea.idioma')} value={form.idioma} options={(['es', 'en'] as const).map((d) => ({ v: d, l: t(`idioma.${d}`) }))} onChange={(v) => setForm({ idioma: v })} />
           <div className="sm:col-span-2"><Segmented label={t('idea.tono')} value={form.tono} options={TONOS.map((d) => ({ v: d, l: t(`tono.${d}`) }))} onChange={(v) => setForm({ tono: v })} /></div>

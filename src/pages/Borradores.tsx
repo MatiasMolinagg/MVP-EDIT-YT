@@ -31,7 +31,7 @@ export default function Borradores() {
           <Link to="/crear" className="btn-primary mt-5">{t('bor.vacio.cta')}</Link>
         </div>
       ) : (
-        <ul className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+        <ul className="grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3">
           {drafts.map((d) => (
             <li key={d.id} className="card flex flex-col p-4 sm:p-5">
               <div className="flex items-center justify-between gap-2">

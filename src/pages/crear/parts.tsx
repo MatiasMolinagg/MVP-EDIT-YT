@@ -23,7 +23,7 @@ export function StageBar({ etapa, id, maxReached }: { etapa: Etapa; id?: string;
             <>
               <span className={cn('h-1.5 w-full rounded-full', active ? 'bg-accent' : done ? 'bg-accent/50' : 'bg-line')} />
               <span className="mt-2 flex min-w-0 items-center gap-1.5">
-                <span className={cn('hidden h-5 w-5 shrink-0 items-center sm:flex justify-center rounded-full font-mono text-[10px] font-bold', active ? 'bg-accent text-white dark:text-[#0b0b12]' : done ? 'bg-accent-soft text-accent' : 'bg-surface-2 text-ink-2')}>
+                <span className={cn('hidden h-5 w-5 shrink-0 items-center sm:flex justify-center rounded-full font-mono text-[10px] font-bold', active ? 'bg-accent on-accent' : done ? 'bg-accent-soft text-accent' : 'bg-surface-2 text-ink-2')}>
                   {done && !active ? <Check size={11} /> : i + 1}
                 </span>
                 <span className={cn('truncate text-[12px] font-semibold sm:text-[13px]', active ? 'text-ink' : 'text-ink-2')}>{t(`etapa.${e}`)}</span>

@@ -77,7 +77,7 @@ function PasoRow({ p }: { p: PasoInfo }) {
     <li className={cn('rounded-xl border p-3 transition-colors sm:p-4', p.estado === 'retry' ? 'border-amber-300 bg-amber-50 dark:border-amber-400/30 dark:bg-amber-400/10' : p.estado === 'running' ? 'border-accent/40 bg-accent-soft/50' : 'border-line')}>
       <div className="flex items-center gap-3">
         <span className={cn('flex h-8 w-8 shrink-0 items-center justify-center rounded-full',
-          p.estado === 'done' ? 'bg-emerald-500 text-white' : p.estado === 'running' ? 'bg-accent text-white dark:text-[#0b0b12]' : p.estado === 'retry' ? 'bg-amber-500 text-white' : 'bg-surface-2 text-ink-2')}>
+          p.estado === 'done' ? 'bg-emerald-500 text-white' : p.estado === 'running' ? 'bg-accent on-accent' : p.estado === 'retry' ? 'bg-amber-500 text-white' : 'bg-surface-2 text-ink-2')}>
           {p.estado === 'done' ? <Check size={16} /> : p.estado === 'running' ? <Loader2 size={16} className="animate-spin" /> : p.estado === 'retry' ? <RotateCw size={15} className="animate-spin" /> : <Clock size={15} />}
         </span>
         <span className="min-w-0 flex-1 truncate text-sm font-semibold sm:text-[15px]">{t(`gen.paso.${p.id}`)}</span>
